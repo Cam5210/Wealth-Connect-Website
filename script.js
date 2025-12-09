@@ -1,5 +1,5 @@
 /**
- * Wealth Connect 360 - Main JavaScript
+ * Wealth Connect - Main JavaScript
  * Handles navigation, animations, form handling, and interactivity
  */
 

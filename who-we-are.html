@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Who We Are | Wealth Connect 360</title>
-  <meta name="description" content="Meet the team behind Wealth Connect 360. Learn about our story, leadership, and what makes us different in the financial services industry.">
+  <title>Who We Are | Wealth Connect</title>
+  <meta name="description" content="Meet the team behind Wealth Connect. Learn about our story, leadership, and what makes us different in the financial services industry.">
   
   <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -16,6 +16,23 @@
   
   <!-- Favicon -->
   <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect fill='%23c9a227' rx='12' width='100' height='100'/><text x='50%' y='55%' dominant-baseline='middle' text-anchor='middle' font-size='50' font-weight='bold' fill='%230a1628'>W</text></svg>">
+  
+  <style>
+    /* Mobile styles for who-we-are page */
+    @media (max-width: 768px) {
+      .story-grid {
+        gap: var(--space-2xl) !important;
+      }
+      
+      .quote-box {
+        padding: var(--space-xl) !important;
+      }
+      
+      .quote-box blockquote p {
+        font-size: var(--text-xl) !important;
+      }
+    }
+  </style>
 </head>
 <body>
   <!-- Navigation -->
@@ -24,7 +41,7 @@
       <div class="nav__inner">
         <a href="index.html" class="nav__logo">
           <span class="nav__logo-icon">W</span>
-          Wealth Connect 360
+          Wealth Connect
         </a>
         
         <div class="nav__links" id="nav-links">
@@ -62,13 +79,13 @@
   <!-- Our Story -->
   <section class="section">
     <div class="container container--content">
-      <div class="grid grid--2" style="align-items: center; gap: var(--space-4xl);">
+      <div class="grid grid--2 story-grid" style="align-items: center; gap: var(--space-4xl);">
         <div class="reveal">
           <span class="eyebrow">Our Story</span>
           <h2>Built on Relationships, Driven by Results</h2>
           <div class="divider"></div>
           <p class="lead mb-2">
-            Wealth Connect 360 was created from a simple observation: too many great solutions 
+            Wealth Connect was created from a simple observation: too many great solutions 
             struggle to reach the firms that need them most.
           </p>
           <p>
@@ -78,13 +95,13 @@
             fighting for the same attention—what if they could come together?
           </p>
           <p>
-            That's the idea behind Wealth Connect 360: a curated collective of specialized 
+            That's the idea behind Wealth Connect: a curated collective of specialized 
             providers who share a go-to-market engine. We combine our relationships, our 
             expertise, and our market access to help every firm in the portfolio succeed.
           </p>
         </div>
         <div class="reveal reveal-delay-2" style="position: relative;">
-          <div style="background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-primary-light) 100%); border-radius: var(--radius-lg); padding: var(--space-3xl); position: relative; overflow: hidden;">
+          <div class="quote-box" style="background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-primary-light) 100%); border-radius: var(--radius-lg); padding: var(--space-3xl); position: relative; overflow: hidden;">
             <div style="position: absolute; top: 0; right: 0; width: 100%; height: 100%; background: radial-gradient(ellipse at 80% 20%, rgba(201, 162, 39, 0.15) 0%, transparent 60%);"></div>
             <blockquote style="position: relative; z-index: 1;">
               <p style="font-family: var(--font-display); font-size: var(--text-2xl); font-style: italic; color: var(--color-white); margin-bottom: var(--space-lg); line-height: 1.4;">
@@ -123,7 +140,7 @@
           <p class="team-card__bio">
             With over 25 years in financial services distribution and business development, 
             Michele has built relationships across the wealth and retirement ecosystem. 
-            Her network and expertise form the foundation of Wealth Connect 360.
+            Her network and expertise form the foundation of Wealth Connect.
           </p>
         </div>
         
@@ -291,7 +308,7 @@
         <div class="footer__brand">
           <div class="footer__logo">
             <span class="nav__logo-icon">W</span>
-            Wealth Connect 360
+            Wealth Connect
           </div>
           <p class="footer__tagline">
             A curated portfolio of solutions helping financial services firms grow revenue and scale efficiently.
@@ -327,7 +344,7 @@
       </div>
       
       <div class="footer__bottom">
-        <p>&copy; 2024 Wealth Connect 360. All rights reserved.</p>
+        <p>&copy; 2024 Wealth Connect. All rights reserved.</p>
         <div class="footer__social">
           <a href="#" aria-label="LinkedIn">
             <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">

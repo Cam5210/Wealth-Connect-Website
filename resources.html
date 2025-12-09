@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Resources & Press | Wealth Connect 360</title>
-  <meta name="description" content="Stay informed with the latest news, insights, and resources from Wealth Connect 360.">
+  <title>Resources & Press | Wealth Connect</title>
+  <meta name="description" content="Stay informed with the latest news, insights, and resources from Wealth Connect.">
   
   <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -127,6 +127,40 @@
     .download-card__action {
       color: var(--color-accent-dark);
     }
+    
+    /* Mobile styles for resources page */
+    @media (max-width: 768px) {
+      .press-item {
+        padding: var(--space-lg);
+        gap: var(--space-md);
+      }
+      
+      .press-item__date {
+        padding-right: var(--space-md);
+      }
+      
+      .press-item__day {
+        font-size: var(--text-2xl);
+      }
+      
+      .press-item__content h4 {
+        font-size: var(--text-base);
+      }
+      
+      .download-card {
+        padding: var(--space-lg);
+        gap: var(--space-md);
+      }
+      
+      .download-card__icon {
+        width: 48px;
+        height: 48px;
+      }
+      
+      .download-card__title {
+        font-size: var(--text-sm);
+      }
+    }
   </style>
 </head>
 <body>
@@ -136,7 +170,7 @@
       <div class="nav__inner">
         <a href="index.html" class="nav__logo">
           <span class="nav__logo-icon">W</span>
-          Wealth Connect 360
+          Wealth Connect
         </a>
         
         <div class="nav__links" id="nav-links">
@@ -164,7 +198,7 @@
         <span class="eyebrow">Stay Informed</span>
         <h1 class="page-hero__title">Resources & Press</h1>
         <p class="page-hero__subtitle">
-          News, insights, and resources from Wealth Connect 360 and our portfolio companies.
+          News, insights, and resources from Wealth Connect and our portfolio companies.
         </p>
       </div>
     </div>
@@ -186,7 +220,7 @@
             <span class="press-item__day">05</span>
           </div>
           <div class="press-item__content">
-            <h4>Wealth Connect 360 Announces New Portfolio Partnership</h4>
+            <h4>Wealth Connect Announces New Portfolio Partnership</h4>
             <p class="press-item__source">Company Announcement</p>
           </div>
         </a>
@@ -314,7 +348,7 @@
             </svg>
           </div>
           <div class="download-card__content">
-            <h4 class="download-card__title">About Wealth Connect 360</h4>
+            <h4 class="download-card__title">About Wealth Connect</h4>
             <p class="download-card__meta">PDF • 2 pages</p>
           </div>
           <div class="download-card__action">
@@ -402,7 +436,7 @@
         <span class="eyebrow">Stay Connected</span>
         <h2 class="cta-section__title">Want to stay informed?</h2>
         <p class="cta-section__text">
-          Get in touch to learn more about Wealth Connect 360 and receive updates 
+          Get in touch to learn more about Wealth Connect and receive updates 
           on new resources and insights.
         </p>
         <div class="cta-section__actions">
@@ -419,7 +453,7 @@
         <div class="footer__brand">
           <div class="footer__logo">
             <span class="nav__logo-icon">W</span>
-            Wealth Connect 360
+            Wealth Connect
           </div>
           <p class="footer__tagline">
             A curated portfolio of solutions helping financial services firms grow revenue and scale efficiently.
@@ -455,7 +489,7 @@
       </div>
       
       <div class="footer__bottom">
-        <p>&copy; 2024 Wealth Connect 360. All rights reserved.</p>
+        <p>&copy; 2024 Wealth Connect. All rights reserved.</p>
         <div class="footer__social">
           <a href="#" aria-label="LinkedIn">
             <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">

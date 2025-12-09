@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Our Portfolio | Wealth Connect 360</title>
+  <title>Our Portfolio | Wealth Connect</title>
   <meta name="description" content="Explore the curated portfolio of firms we represent. Each brings specialized capabilities; together they create an integrated solution set.">
   
   <!-- Fonts -->
@@ -108,6 +108,33 @@
       color: var(--color-gray-500);
       margin-bottom: var(--space-xl);
     }
+    
+    /* Mobile styles for portfolio page */
+    @media (max-width: 768px) {
+      .portfolio-filters {
+        gap: var(--space-sm);
+        margin-bottom: var(--space-2xl);
+      }
+      
+      .portfolio-filter {
+        padding: var(--space-xs) var(--space-md);
+        font-size: var(--text-xs);
+      }
+      
+      .join-portfolio {
+        padding: var(--space-xl);
+      }
+      
+      .join-portfolio__icon {
+        width: 48px;
+        height: 48px;
+      }
+      
+      .join-portfolio__icon svg {
+        width: 24px;
+        height: 24px;
+      }
+    }
   </style>
 </head>
 <body>
@@ -117,7 +144,7 @@
       <div class="nav__inner">
         <a href="index.html" class="nav__logo">
           <span class="nav__logo-icon">W</span>
-          Wealth Connect 360
+          Wealth Connect
         </a>
         
         <div class="nav__links" id="nav-links">
@@ -315,7 +342,7 @@
             
             <h5>Solution</h5>
             <p>
-              Wealth Connect 360 engaged our recruiting partner to develop a targeted 
+              Wealth Connect engaged our recruiting partner to develop a targeted 
               outreach strategy, leveraging our network of advisor relationships to 
               identify and approach candidates who were a strong cultural fit.
             </p>
@@ -350,7 +377,7 @@
             
             <h5>Solution</h5>
             <p>
-              Wealth Connect 360 served as their fractional sales team, leveraging our 
+              Wealth Connect served as their fractional sales team, leveraging our 
               existing relationships to secure introductions and participating actively 
               in the sales process to help position the solution.
             </p>
@@ -452,7 +479,7 @@
         <div class="footer__brand">
           <div class="footer__logo">
             <span class="nav__logo-icon">W</span>
-            Wealth Connect 360
+            Wealth Connect
           </div>
           <p class="footer__tagline">
             A curated portfolio of solutions helping financial services firms grow revenue and scale efficiently.
@@ -488,7 +515,7 @@
       </div>
       
       <div class="footer__bottom">
-        <p>&copy; 2024 Wealth Connect 360. All rights reserved.</p>
+        <p>&copy; 2024 Wealth Connect. All rights reserved.</p>
         <div class="footer__social">
           <a href="#" aria-label="LinkedIn">
             <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">

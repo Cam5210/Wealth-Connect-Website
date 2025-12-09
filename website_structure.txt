@@ -1,12 +1,12 @@
 1. Home
 
-Goal: Quickly explain what Wealth Connect 360 is, who it serves, and why it’s different. This should feel “lean and mean,” not bloated.
+Goal: Quickly explain what Wealth Connect is, who it serves, and why it’s different. This should feel “lean and mean,” not bloated.
 
 Sections:
 
 Hero Block
 
-One clear headline: what Wealth Connect 360 is (e.g., “A curated portfolio of solutions to help firms grow revenue and scale efficiently.”)
+One clear headline: what Wealth Connect is (e.g., “A curated portfolio of solutions to help firms grow revenue and scale efficiently.”)
 
 Short subheading explaining the collective/co-op concept.
 
@@ -64,7 +64,7 @@ Sections:
 
 Our Story
 
-Brief origin story: why Wealth Connect 360 was created (to combine relationships, expertise, and a curated set of solutions into one go-to market engine).
+Brief origin story: why Wealth Connect was created (to combine relationships, expertise, and a curated set of solutions into one go-to market engine).
 
 The Partners / Leadership
 
@@ -78,7 +78,7 @@ Each card: headshot, name, role, 2–3 sentence bio focused on industry experien
 
 How We Work
 
-Short explanation that Wealth Connect 360:
+Short explanation that Wealth Connect:
 
 Represents a curated set of firms.
 
@@ -104,7 +104,7 @@ Goal: Explain the service categories clearly, without overwhelming. This can be 
 
 Top of Page:
 
-Short intro: “Wealth Connect 360 brings together specialized providers across key areas of growth and operations. Together, we help firms win new business, deepen relationships, and scale.”
+Short intro: “Wealth Connect brings together specialized providers across key areas of growth and operations. Together, we help firms win new business, deepen relationships, and scale.”
 
 Core Sections / Tiles (each with 2–3 paragraphs and bullets):
 
@@ -194,7 +194,7 @@ Outcome (metrics if possible, or directional wins)
 
 “Join the Portfolio” Block
 
-Short copy inviting potential providers to inquire about joining Wealth Connect 360.
+Short copy inviting potential providers to inquire about joining Wealth Connect.
 
 CTA: “Become a Portfolio Partner.”
 
@@ -224,7 +224,7 @@ Downloads / One-Pagers (Optional)
 
 PDFs for firms or partners:
 
-“About Wealth Connect 360”
+“About Wealth Connect”
 
 “How Our Co-op Model Works”
 
@@ -238,7 +238,7 @@ Sections:
 
 Simple Intro
 
-One sentence: “If you’d like to explore working with Wealth Connect 360—as a portfolio company or as a client—let’s connect.”
+One sentence: “If you’d like to explore working with Wealth Connect—as a portfolio company or as a client—let’s connect.”
 
 Contact Form
 

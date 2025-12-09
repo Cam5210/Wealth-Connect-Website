@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Contact Us | Wealth Connect 360</title>
-  <meta name="description" content="Get in touch with Wealth Connect 360. Whether you're interested in our services or becoming a portfolio partner, we'd love to hear from you.">
+  <title>Contact Us | Wealth Connect</title>
+  <meta name="description" content="Get in touch with Wealth Connect. Whether you're interested in our services or becoming a portfolio partner, we'd love to hear from you.">
   
   <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -166,6 +166,50 @@
     .success-message__text {
       color: var(--color-gray-500);
     }
+    
+    /* Mobile styles for contact page */
+    @media (max-width: 900px) {
+      .contact-grid {
+        gap: var(--space-2xl);
+      }
+      
+      .contact-info {
+        position: static;
+      }
+    }
+    
+    @media (max-width: 768px) {
+      .contact-form {
+        padding: var(--space-xl);
+      }
+      
+      .contact-info__icon {
+        width: 40px;
+        height: 40px;
+      }
+      
+      .contact-info__value {
+        font-size: var(--text-base);
+      }
+      
+      .calendly-card {
+        padding: var(--space-lg);
+      }
+      
+      .calendly-card__icon {
+        width: 40px;
+        height: 40px;
+      }
+      
+      .success-message {
+        padding: var(--space-xl);
+      }
+      
+      .success-message__icon {
+        width: 64px;
+        height: 64px;
+      }
+    }
   </style>
 </head>
 <body>
@@ -175,7 +219,7 @@
       <div class="nav__inner">
         <a href="index.html" class="nav__logo">
           <span class="nav__logo-icon">W</span>
-          Wealth Connect 360
+          Wealth Connect
         </a>
         
         <div class="nav__links" id="nav-links">
@@ -203,7 +247,7 @@
         <span class="eyebrow">Get in Touch</span>
         <h1 class="page-hero__title">Contact Us</h1>
         <p class="page-hero__subtitle">
-          If you'd like to explore working with Wealth Connect 360—as a portfolio company 
+          If you'd like to explore working with Wealth Connect—as a portfolio company 
           or as a client—let's connect.
         </p>
       </div>
@@ -377,7 +421,7 @@
         <div class="footer__brand">
           <div class="footer__logo">
             <span class="nav__logo-icon">W</span>
-            Wealth Connect 360
+            Wealth Connect
           </div>
           <p class="footer__tagline">
             A curated portfolio of solutions helping financial services firms grow revenue and scale efficiently.
@@ -413,7 +457,7 @@
       </div>
       
       <div class="footer__bottom">
-        <p>&copy; 2024 Wealth Connect 360. All rights reserved.</p>
+        <p>&copy; 2024 Wealth Connect. All rights reserved.</p>
         <div class="footer__social">
           <a href="#" aria-label="LinkedIn">
             <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
