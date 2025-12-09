@@ -1,0 +1,271 @@
+1. Home
+
+Goal: Quickly explain what Wealth Connect 360 is, who it serves, and why it’s different. This should feel “lean and mean,” not bloated.
+
+Sections:
+
+Hero Block
+
+One clear headline: what Wealth Connect 360 is (e.g., “A curated portfolio of solutions to help firms grow revenue and scale efficiently.”)
+
+Short subheading explaining the collective/co-op concept.
+
+Primary CTA: “Explore Our Services” or “View Our Portfolio.”
+
+Secondary CTA: “Talk With Us” / “Contact Us.”
+
+What We Do (High-Level Overview)
+
+2–3 sentences: Wealth Connect as a fractional sales/business development engine for a portfolio of providers.
+
+Simple visual: icons or a small diagram of “Wealth Connect” in the center with partner firms/solutions around it.
+
+Who We Work With
+
+Short description: types of clients (e.g., recordkeepers, asset managers, tech vendors, retirement/wealth platforms).
+
+Possibly a row of logos (real or placeholder initially).
+
+Why It Matters / Key Benefits
+
+3–4 bullet points:
+
+Faster distribution and market access.
+
+Curated, vetted solution providers.
+
+Deep industry relationships.
+
+Lean go-to-market without hiring a full internal team.
+
+Highlight of Service Categories
+
+Brief tiles linking to “Our Services” for:
+
+Business Development / Recruiting
+
+Fractional Sales
+
+Marketing / Demand Gen
+
+Client Engagement
+
+Compliance / Cyber (if included now or “Coming Soon”)
+
+CTA Footer
+
+Short line + button: “Interested in joining our portfolio?” / “Let’s talk.”
+
+2. Who We Are
+
+Goal: Establish credibility and trust. This page is where Michele and partners are framed as the “operators” behind the portfolio.
+
+Sections:
+
+Our Story
+
+Brief origin story: why Wealth Connect 360 was created (to combine relationships, expertise, and a curated set of solutions into one go-to market engine).
+
+The Partners / Leadership
+
+Profile cards for:
+
+Michele
+
+Other founding partners / core team
+
+Each card: headshot, name, role, 2–3 sentence bio focused on industry experience and network.
+
+How We Work
+
+Short explanation that Wealth Connect 360:
+
+Represents a curated set of firms.
+
+Acts as an extension of their sales/BD.
+
+Works transparently on behalf of both providers and end clients.
+
+What Makes Us Different
+
+3–4 bullets:
+
+Deep industry relationships.
+
+Carefully vetted portfolio (not a marketplace free-for-all).
+
+Shared “sweat equity” go-to-market model.
+
+Focus on long-term fit, not one-off deals.
+
+3. Our Services
+
+Goal: Explain the service categories clearly, without overwhelming. This can be a single page with sections or a parent page with subpages later.
+
+Top of Page:
+
+Short intro: “Wealth Connect 360 brings together specialized providers across key areas of growth and operations. Together, we help firms win new business, deepen relationships, and scale.”
+
+Core Sections / Tiles (each with 2–3 paragraphs and bullets):
+
+Business Development & Recruiting
+
+Description of advisory/recruiting work.
+
+How Wealth Connect helps firms attract and onboard the right advisors/partners.
+
+Fractional Sales / Sales Enablement
+
+Explain that Wealth Connect acts as a fractional sales engine.
+
+Emphasize existing relationships and ability to open doors.
+
+Marketing & Demand Generation
+
+B2B email marketing, campaigns, positioning, etc.
+
+Tie in partners like Eric / email lead-gen concepts.
+
+Client Engagement / Experience
+
+This is the “client engagement” slot Michele referenced.
+
+Tools or approaches that improve end-client communication, retention, and satisfaction.
+
+Compliance & Cyber (Optional / Future)
+
+If you include now: basic description of how this partner helps with compliance/cybersecurity.
+
+If not ready yet: small “Coming Soon” strip to signal breadth without over-committing.
+
+For Each Section, Luke Should Include:
+
+Simple “What we do”
+
+“Who it’s for”
+
+3–5 “Compelling reasons” or proof points (Michele’s phrase)
+
+CTA button (e.g., “Talk to us about [Service]”)
+
+4. Portfolio
+
+Goal: Show the firms in the collective and prove credibility. This is the “portfolio” concept you referenced from that other site.
+
+Sections:
+
+Portfolio Overview
+
+Short explanation: “These are the firms we have chosen to represent. Each brings a specialized capability; together they create an integrated solution set for our clients.”
+
+Portfolio Grid
+
+Logo and short summary for each firm:
+
+Name
+
+What they do (1–2 lines)
+
+Sector/category tag (e.g., “Compliance,” “Tech,” “Marketing,” etc.)
+
+Optional: link to each firm’s site.
+
+By Sector View (Optional)
+
+Filters or sections like:
+
+Technology
+
+Distribution / Sales
+
+Compliance / Risk
+
+Marketing / Engagement
+
+Case Studies / Proof
+
+Short case blurbs:
+
+Problem
+
+What solution(s) in the portfolio were used
+
+Outcome (metrics if possible, or directional wins)
+
+“Join the Portfolio” Block
+
+Short copy inviting potential providers to inquire about joining Wealth Connect 360.
+
+CTA: “Become a Portfolio Partner.”
+
+5. Resources & Press
+
+You can make this one combined page to stay lean.
+
+Sections:
+
+Press & Announcements
+
+Press mentions, partnerships, co-branded announcements.
+
+Short entries with links to external articles.
+
+Insights / Blog
+
+Articles, whitepapers, or LinkedIn posts repurposed:
+
+Trends in distribution for financial services.
+
+Best practices for advisor recruiting.
+
+Go-to-market lessons learned, etc.
+
+Downloads / One-Pagers (Optional)
+
+PDFs for firms or partners:
+
+“About Wealth Connect 360”
+
+“How Our Co-op Model Works”
+
+Service summaries.
+
+6. Contact
+
+Goal: Make it very easy for both providers and potential clients to start a conversation.
+
+Sections:
+
+Simple Intro
+
+One sentence: “If you’d like to explore working with Wealth Connect 360—as a portfolio company or as a client—let’s connect.”
+
+Contact Form
+
+Fields:
+
+Name
+
+Company
+
+Email
+
+Role
+
+“I’m interested in…” (checkboxes: Joining the portfolio / Engaging your services / Something else)
+
+Message
+
+Direct Contact Info
+
+Email + phone
+
+Possibly, separate alias for:
+
+Providers (portfolio interest)
+
+Clients (service inquiries)
+
+Optional: Calendly Link
+
+“Schedule a conversation” for a short intro call.

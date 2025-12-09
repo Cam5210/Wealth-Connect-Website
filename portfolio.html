@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Our Portfolio | Wealth Connect 360</title>
+  <meta name="description" content="Explore the curated portfolio of firms we represent. Each brings specialized capabilities; together they create an integrated solution set.">
+  
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400&family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&display=swap" rel="stylesheet">
+  
+  <!-- Styles -->
+  <link rel="stylesheet" href="styles.css">
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect fill='%23c9a227' rx='12' width='100' height='100'/><text x='50%' y='55%' dominant-baseline='middle' text-anchor='middle' font-size='50' font-weight='bold' fill='%230a1628'>W</text></svg>">
+  
+  <style>
+    .portfolio-filters {
+      display: flex;
+      justify-content: center;
+      gap: var(--space-md);
+      flex-wrap: wrap;
+      margin-bottom: var(--space-3xl);
+    }
+    
+    .portfolio-filter {
+      padding: var(--space-sm) var(--space-lg);
+      border-radius: var(--radius-full);
+      font-size: var(--text-sm);
+      font-weight: 600;
+      color: var(--color-gray-500);
+      background-color: transparent;
+      border: 2px solid var(--color-gray-200);
+      transition: all var(--transition-fast);
+      cursor: pointer;
+    }
+    
+    .portfolio-filter:hover {
+      border-color: var(--color-gray-300);
+      color: var(--color-gray-600);
+    }
+    
+    .portfolio-filter.active {
+      background-color: var(--color-primary);
+      border-color: var(--color-primary);
+      color: var(--color-white);
+    }
+    
+    .portfolio-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: var(--space-xl);
+    }
+    
+    @media (max-width: 1024px) {
+      .portfolio-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+    
+    @media (max-width: 600px) {
+      .portfolio-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+    
+    .case-studies-grid {
+      display: flex;
+      flex-direction: column;
+      gap: var(--space-xl);
+    }
+    
+    .join-portfolio {
+      background: linear-gradient(135deg, var(--color-off-white) 0%, var(--color-cream) 100%);
+      border: 2px dashed var(--color-gray-300);
+      border-radius: var(--radius-lg);
+      padding: var(--space-3xl);
+      text-align: center;
+      transition: all var(--transition-base);
+    }
+    
+    .join-portfolio:hover {
+      border-color: var(--color-accent);
+      background: linear-gradient(135deg, rgba(201, 162, 39, 0.05) 0%, var(--color-cream) 100%);
+    }
+    
+    .join-portfolio__icon {
+      width: 64px;
+      height: 64px;
+      background-color: var(--color-white);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0 auto var(--space-lg);
+      color: var(--color-accent);
+    }
+    
+    .join-portfolio__title {
+      font-size: var(--text-xl);
+      margin-bottom: var(--space-sm);
+    }
+    
+    .join-portfolio__text {
+      color: var(--color-gray-500);
+      margin-bottom: var(--space-xl);
+    }
+  </style>
+</head>
+<body>
+  <!-- Navigation -->
+  <nav class="nav" id="nav">
+    <div class="container">
+      <div class="nav__inner">
+        <a href="index.html" class="nav__logo">
+          <span class="nav__logo-icon">W</span>
+          Wealth Connect 360
+        </a>
+        
+        <div class="nav__links" id="nav-links">
+          <a href="index.html" class="nav__link">Home</a>
+          <a href="who-we-are.html" class="nav__link">Who We Are</a>
+          <a href="services.html" class="nav__link">Services</a>
+          <a href="portfolio.html" class="nav__link nav__link--active">Portfolio</a>
+          <a href="resources.html" class="nav__link">Resources</a>
+          <a href="contact.html" class="btn btn--primary nav__cta">Contact Us</a>
+        </div>
+        
+        <button class="nav__mobile-toggle" id="nav-toggle" aria-label="Toggle navigation">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Page Hero -->
+  <section class="page-hero">
+    <div class="container">
+      <div class="page-hero__content">
+        <span class="eyebrow">Our Partners</span>
+        <h1 class="page-hero__title">The Portfolio</h1>
+        <p class="page-hero__subtitle">
+          These are the firms we have chosen to represent. Each brings a specialized capability; 
+          together they create an integrated solution set for our clients.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Portfolio Grid -->
+  <section class="section">
+    <div class="container container--content">
+      <!-- Filters -->
+      <div class="portfolio-filters reveal">
+        <button class="portfolio-filter active" data-filter="all">All</button>
+        <button class="portfolio-filter" data-filter="technology">Technology</button>
+        <button class="portfolio-filter" data-filter="distribution">Distribution & Sales</button>
+        <button class="portfolio-filter" data-filter="marketing">Marketing & Engagement</button>
+        <button class="portfolio-filter" data-filter="compliance">Compliance & Risk</button>
+      </div>
+      
+      <!-- Portfolio Cards -->
+      <div class="portfolio-grid">
+        <div class="portfolio-card reveal reveal-delay-1" data-category="technology">
+          <div class="portfolio-card__logo">
+            <span class="portfolio-card__logo-placeholder">TechPartner Co</span>
+          </div>
+          <span class="portfolio-card__category">Technology</span>
+          <p class="portfolio-card__description">
+            Leading provider of wealth management technology solutions, helping advisors 
+            streamline operations and improve client outcomes.
+          </p>
+          <a href="#" class="portfolio-card__link">
+            Visit website
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/>
+              <polyline points="15 3 21 3 21 9"/>
+              <line x1="10" y1="14" x2="21" y2="3"/>
+            </svg>
+          </a>
+        </div>
+        
+        <div class="portfolio-card reveal reveal-delay-2" data-category="distribution">
+          <div class="portfolio-card__logo">
+            <span class="portfolio-card__logo-placeholder">Distribution Solutions</span>
+          </div>
+          <span class="portfolio-card__category">Distribution & Sales</span>
+          <p class="portfolio-card__description">
+            Specialized in helping asset managers and service providers expand their 
+            distribution reach across the RIA and broker-dealer channels.
+          </p>
+          <a href="#" class="portfolio-card__link">
+            Visit website
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/>
+              <polyline points="15 3 21 3 21 9"/>
+              <line x1="10" y1="14" x2="21" y2="3"/>
+            </svg>
+          </a>
+        </div>
+        
+        <div class="portfolio-card reveal reveal-delay-3" data-category="marketing">
+          <div class="portfolio-card__logo">
+            <span class="portfolio-card__logo-placeholder">LeadGen Partners</span>
+          </div>
+          <span class="portfolio-card__category">Marketing & Engagement</span>
+          <p class="portfolio-card__description">
+            B2B demand generation specialists focused on financial services, delivering 
+            qualified leads through targeted email and content campaigns.
+          </p>
+          <a href="#" class="portfolio-card__link">
+            Visit website
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/>
+              <polyline points="15 3 21 3 21 9"/>
+              <line x1="10" y1="14" x2="21" y2="3"/>
+            </svg>
+          </a>
+        </div>
+        
+        <div class="portfolio-card reveal reveal-delay-1" data-category="technology">
+          <div class="portfolio-card__logo">
+            <span class="portfolio-card__logo-placeholder">ClientConnect</span>
+          </div>
+          <span class="portfolio-card__category">Technology</span>
+          <p class="portfolio-card__description">
+            Client engagement platform designed for wealth managers, featuring automated 
+            communications, reporting, and experience analytics.
+          </p>
+          <a href="#" class="portfolio-card__link">
+            Visit website
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/>
+              <polyline points="15 3 21 3 21 9"/>
+              <line x1="10" y1="14" x2="21" y2="3"/>
+            </svg>
+          </a>
+        </div>
+        
+        <div class="portfolio-card reveal reveal-delay-2" data-category="compliance">
+          <div class="portfolio-card__logo">
+            <span class="portfolio-card__logo-placeholder">ComplianceFirst</span>
+          </div>
+          <span class="portfolio-card__category">Compliance & Risk</span>
+          <p class="portfolio-card__description">
+            Regulatory compliance consulting and technology for RIAs and broker-dealers, 
+            including audit preparation and ongoing compliance support.
+          </p>
+          <a href="#" class="portfolio-card__link">
+            Visit website
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/>
+              <polyline points="15 3 21 3 21 9"/>
+              <line x1="10" y1="14" x2="21" y2="3"/>
+            </svg>
+          </a>
+        </div>
+        
+        <div class="portfolio-card reveal reveal-delay-3" data-category="distribution">
+          <div class="portfolio-card__logo">
+            <span class="portfolio-card__logo-placeholder">AdvisorRecruit</span>
+          </div>
+          <span class="portfolio-card__category">Distribution & Sales</span>
+          <p class="portfolio-card__description">
+            Advisory recruiting firm specializing in helping firms attract and retain 
+            top-performing financial advisors and wealth managers.
+          </p>
+          <a href="#" class="portfolio-card__link">
+            Visit website
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/>
+              <polyline points="15 3 21 3 21 9"/>
+              <line x1="10" y1="14" x2="21" y2="3"/>
+            </svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Case Studies -->
+  <section class="section section--light">
+    <div class="container container--content">
+      <div class="section-header reveal">
+        <span class="eyebrow">Results</span>
+        <h2 class="section-header__title">Case Studies</h2>
+        <div class="divider divider--center"></div>
+        <p class="section-header__text">
+          See how our portfolio companies have helped clients achieve their goals.
+        </p>
+      </div>
+      
+      <div class="case-studies-grid">
+        <div class="case-study reveal">
+          <div class="case-study__meta">
+            <p class="case-study__client">Regional RIA</p>
+            <h3 class="case-study__title">Accelerated Growth Through Strategic Recruiting</h3>
+            <div class="case-study__tags">
+              <span class="case-study__tag">Business Development</span>
+              <span class="case-study__tag">Recruiting</span>
+            </div>
+          </div>
+          <div class="case-study__content">
+            <h5>Challenge</h5>
+            <p>
+              A regional RIA with $2B AUM was struggling to attract experienced advisors 
+              despite a competitive payout and strong platform. Their internal recruiting 
+              efforts had plateaued.
+            </p>
+            
+            <h5>Solution</h5>
+            <p>
+              Wealth Connect 360 engaged our recruiting partner to develop a targeted 
+              outreach strategy, leveraging our network of advisor relationships to 
+              identify and approach candidates who were a strong cultural fit.
+            </p>
+            
+            <div class="case-study__result">
+              <h5>Outcome</h5>
+              <p>
+                <strong>6 experienced advisors recruited</strong> within 12 months, 
+                adding <strong>$400M in new AUM</strong> and significantly expanding 
+                the firm's presence in two new markets.
+              </p>
+            </div>
+          </div>
+        </div>
+        
+        <div class="case-study reveal">
+          <div class="case-study__meta">
+            <p class="case-study__client">FinTech Vendor</p>
+            <h3 class="case-study__title">Breaking Into the Retirement Plan Market</h3>
+            <div class="case-study__tags">
+              <span class="case-study__tag">Fractional Sales</span>
+              <span class="case-study__tag">Market Entry</span>
+            </div>
+          </div>
+          <div class="case-study__content">
+            <h5>Challenge</h5>
+            <p>
+              An emerging fintech company had developed a powerful participant engagement 
+              tool but lacked the relationships and credibility to get meetings with 
+              major recordkeepers and plan sponsors.
+            </p>
+            
+            <h5>Solution</h5>
+            <p>
+              Wealth Connect 360 served as their fractional sales team, leveraging our 
+              existing relationships to secure introductions and participating actively 
+              in the sales process to help position the solution.
+            </p>
+            
+            <div class="case-study__result">
+              <h5>Outcome</h5>
+              <p>
+                <strong>3 pilot programs secured</strong> with mid-size recordkeepers 
+                within 8 months, leading to <strong>2 enterprise contracts</strong> 
+                and a <strong>$5M Series A</strong> investment.
+              </p>
+            </div>
+          </div>
+        </div>
+        
+        <div class="case-study reveal">
+          <div class="case-study__meta">
+            <p class="case-study__client">Asset Manager</p>
+            <h3 class="case-study__title">Revitalizing a Stalled Distribution Effort</h3>
+            <div class="case-study__tags">
+              <span class="case-study__tag">Marketing</span>
+              <span class="case-study__tag">Demand Gen</span>
+            </div>
+          </div>
+          <div class="case-study__content">
+            <h5>Challenge</h5>
+            <p>
+              A boutique asset manager had excellent products but was struggling to generate 
+              awareness and leads in a crowded market. Their small internal team couldn't 
+              compete with larger firms' marketing budgets.
+            </p>
+            
+            <h5>Solution</h5>
+            <p>
+              Our marketing partner developed a targeted content and email campaign focused 
+              on the manager's differentiated investment approach, reaching decision-makers 
+              at RIAs and family offices.
+            </p>
+            
+            <div class="case-study__result">
+              <h5>Outcome</h5>
+              <p>
+                <strong>150+ qualified meetings</strong> generated over 6 months, 
+                resulting in <strong>$75M in new institutional mandates</strong> and 
+                a sustainable pipeline of opportunities.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Join Portfolio -->
+  <section class="section">
+    <div class="container container--narrow">
+      <div class="join-portfolio reveal">
+        <div class="join-portfolio__icon">
+          <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <line x1="12" y1="5" x2="12" y2="19"/>
+            <line x1="5" y1="12" x2="19" y2="12"/>
+          </svg>
+        </div>
+        <h3 class="join-portfolio__title">Interested in joining the portfolio?</h3>
+        <p class="join-portfolio__text">
+          We're always looking for exceptional firms that align with our values and can 
+          benefit from our collective go-to-market approach. If you think you might be 
+          a fit, we'd love to hear from you.
+        </p>
+        <a href="contact.html?interest=portfolio" class="btn btn--primary btn--large">
+          Become a Portfolio Partner
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Section -->
+  <section class="cta-section">
+    <div class="container">
+      <div class="cta-section__content reveal">
+        <span class="eyebrow">Get Started</span>
+        <h2 class="cta-section__title">Need a solution from our portfolio?</h2>
+        <p class="cta-section__text">
+          Tell us about your challenges and we'll connect you with the right partners 
+          from our portfolio.
+        </p>
+        <div class="cta-section__actions">
+          <a href="contact.html" class="btn btn--primary btn--large">Contact Us</a>
+          <a href="services.html" class="btn btn--secondary btn--large">View Services</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__grid">
+        <div class="footer__brand">
+          <div class="footer__logo">
+            <span class="nav__logo-icon">W</span>
+            Wealth Connect 360
+          </div>
+          <p class="footer__tagline">
+            A curated portfolio of solutions helping financial services firms grow revenue and scale efficiently.
+          </p>
+        </div>
+        
+        <div>
+          <h4 class="footer__heading">Navigation</h4>
+          <div class="footer__links">
+            <a href="index.html" class="footer__link">Home</a>
+            <a href="who-we-are.html" class="footer__link">Who We Are</a>
+            <a href="services.html" class="footer__link">Services</a>
+            <a href="portfolio.html" class="footer__link">Portfolio</a>
+          </div>
+        </div>
+        
+        <div>
+          <h4 class="footer__heading">Resources</h4>
+          <div class="footer__links">
+            <a href="resources.html" class="footer__link">Press & News</a>
+            <a href="resources.html#insights" class="footer__link">Insights</a>
+            <a href="resources.html#downloads" class="footer__link">Downloads</a>
+          </div>
+        </div>
+        
+        <div>
+          <h4 class="footer__heading">Connect</h4>
+          <div class="footer__links">
+            <a href="contact.html" class="footer__link">Contact Us</a>
+            <a href="mailto:info@wealthconnect360.com" class="footer__link">info@wealthconnect360.com</a>
+          </div>
+        </div>
+      </div>
+      
+      <div class="footer__bottom">
+        <p>&copy; 2024 Wealth Connect 360. All rights reserved.</p>
+        <div class="footer__social">
+          <a href="#" aria-label="LinkedIn">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+            </svg>
+          </a>
+          <a href="#" aria-label="Twitter">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z"/>
+            </svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
